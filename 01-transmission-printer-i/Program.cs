@@ -7,11 +7,11 @@ class Program
     }
     static void PrintTransmission(string message)
     {
-        // TODO
+        Console.WriteLine(message);
     }
 
     static void PrintTransmission(string sender, string message)
     {
-        // TODO
+        Console.WriteLine(sender + ": " + message);
     }
 }
