@@ -10,14 +10,20 @@ public class Drone
     }
 
     public string Describe()
-    {
-        // TODO
-        return "";
+    { 
+        
+        return $"Status - {Name}: {FlightHours} Flight hours";
     }
 
     public bool NeedsService()
     {
-        // TODO
-        return false;
+        if (FlightHours >= 100)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
